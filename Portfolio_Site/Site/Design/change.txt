@@ -1,0 +1,5 @@
+border radius bij projecten 16
+box shadow
+icon laten starten bij my
+contact meer in midden
+about me box, margin-left 48px
