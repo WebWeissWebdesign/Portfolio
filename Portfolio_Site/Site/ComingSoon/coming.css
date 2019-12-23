@@ -35,18 +35,17 @@ html,body{
     display: inline-block;
     text-align: center;
     font-size: 96px;
-    padding-top: 20%;
+    padding-top: 5%;
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 200px) {
     #comingSoon{
-        font-size: 15vw;
+        font-size: 48px;
     }
 
     #countdown{
-        font-size: 15vw;
-        padding-top: 55%;
+        display: none;
     }
 } 
 
@@ -58,14 +57,16 @@ html,body{
 
     #countdown{
         font-size: 10vw;
-        padding-top: 5%;
+        padding-top: 25%;
+        display: block;
     }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #countdown{
-        font-size: 56px;
+        font-size: 80px;
+        padding-top: 20%;
     }
 } 
 
@@ -73,7 +74,15 @@ html,body{
 @media only screen and (min-width: 992px) {
     #countdown{
         font-size: 96px;
-        padding-top: 50%;
+        padding-top: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+    #countdown{
+        font-size: 96px;
+        padding-top: 5%;
     }
 } 
 
@@ -84,6 +93,6 @@ html,body{
     }
     #countdown{
         font-size: 96px;
-        padding-top: 20%;
+        padding-top: 15%;
     }
 }
