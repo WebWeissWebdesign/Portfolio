@@ -9,6 +9,7 @@ html,body{
     width: 100%;
     height: 100%;
     font-family: Cera;
+    color: white;
 }
 
 #bg{
@@ -23,7 +24,6 @@ html,body{
 
 #nav-left{
     font-size: 32px;
-    color: white;
     margin-left: 32px;
     margin-top: 24px;
     float: left;
@@ -42,6 +42,77 @@ a{
 
 img{
     width: 40px;
+}
+
+#iam{
+    
+    font-size: 32px;
+    margin-top: 43vh;
+    float: left;
+    margin-left: 7%;
+}
+
+#senne{
+    float: left;
+    font-size: 304px;
+    margin-top: 25vh;
+}
+
+#functie{
+    float: right;
+    margin-right: 37.5%;
+    text-align: center;
+    font-size: 32px;
+    margin-top: -5vh;
+}
+
+#scroll img{
+    transform: rotate(90deg);
+    float: right;
+    margin-right: 53%;
+    width: 32px;
+}
+
+#scroll{
+    float: right;
+    margin-top: 8vh;
+    margin-right: 45%;
+}
+
+#skills{
+    background-image: url(../Design/turnAround.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#skills-table-left{
+    width: 30%;
+    margin-left: 20%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-right: 0.5px solid black;
+    border-radius: 16px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 80vh;
+    float: left;
+}
+
+#skills-table-right{
+    width: 30%;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 16px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 80vh;
 }
 
 /* Extra small devices (phones, 600px and down) */
