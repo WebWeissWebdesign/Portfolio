@@ -46,17 +46,6 @@ img{
     width: 40px;
 }
 
-#skills{
-    background-image: url(../Design/turnAround.png);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    font-size: 24px;
-    color: #003563;
-}
-
 #iam{
     font-size: 24px;
     padding-top: 35vh;
@@ -80,10 +69,21 @@ img{
     margin-top: 15vh;
 }
 
+
+#skills{
+    background-image: url(../Design/turnAround.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 24px;
+    color: #003563;
+}
+
 #skills-table-left{
     width: 70%;
     margin-left: 15%;
-    
     background-color: white;
     border-right: 0.5px solid black;
     border-radius: 16px;
@@ -184,19 +184,127 @@ img{
     } 
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    #nav-left{
+        font-size: 40px;
+    }
+    
+    img{
+        width: 48px;
+    }
+    
+    #iam{
+        font-size: 40px;
+    }
+    
+    #senne{
+        font-size: 200px;
+    }
+    
+    #functie{
+        font-size: 32px;
+    }
+    
+    #scroll{
+        font-size: 24px;
+    }
+
+    #scroll img{
+        width: 48px;
+        margin-right: 8px;
+    }
+
+    #skills{
+        font-size: 40px;
+    }
+    
+    #skills img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    #smallTitle{
+        font-size: 32px;
+        margin-top: 15px;
+    }
+    
+    #text{
+        font-size: 24px;
+        color: black;
+    }
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
+    #iam{
+        font-size: 32px;
+        padding-top: 30vh;
+    }
+    
+    #senne{
+        font-size: 224px;
+        margin-top: -5vh;
+    }
+    
+    #functie{
+        font-size: 32px;
+        
+    }
+    
+    #scroll img{
+        width: 40px;
+    }
+    
+    #scroll{
+        margin-top: 10vh;
+    }
+    
+    
+    #skills{
+        font-size: 32px;
+    }
+    
+    #skills-table-left{
+        width: 35%;
+        margin: 0;
+        margin-left: 15%;
+        margin-top: 10vh;
+        border-radius: 16px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 80vh;
+        float: left;
+    }
+    
+    #skills-table-right{
+        width: 35%;
+        margin: 0;
+        float: left;
+        margin-top: 10vh;
+        background-color: white;
+        border-radius: 16px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 80vh;
+    }
+    
+    #skills img{
+        width: 136px;
+        height: 136px;
+        margin-top: 32px;
+    }
+    
+    #smallTitle{
+        font-size: 24px;
+        margin-top: 48px;
+        line-height: 0.3em;
+    }
+    
+    #text{
+        font-size: 24px;
+        line-height: 0.8em;
+    }
 }
 
 /* Desktops and laptops ----------- */
