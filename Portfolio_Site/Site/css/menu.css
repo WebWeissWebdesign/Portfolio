@@ -2,4 +2,144 @@
     width: 40px;
 }
 
+#menuleft{
+    text-align: left;
+    padding-top: 20%;
+    width: 80%;
+}
 
+li{
+    list-style: none;
+    font-size: 48px;
+    padding-top: 35px;
+}
+
+/* Small smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) and (orientation:portrait){
+    #nav-right img{
+        width: 24px;
+    }
+    
+    li{
+        font-size: 24px;
+    }
+}
+
+/* Big smartphones (portrait) ----------- */
+@media only screen and (min-width : 320px) and (orientation:portrait){
+    #nav-right img{
+        width: 32px;
+    }
+    
+    li{
+        font-size: 40px;
+    }
+}
+
+/* Long phone */
+@media only screen and (min-height : 700px) and (orientation:portrait){
+    #nav-right img{
+        width: 32px;
+    }
+
+    #menuleft{
+        padding-top: 35%;
+    }
+    
+    li{
+        font-size: 48px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (orientation: landscape){
+    #nav-right img{
+        width: 32px;
+    }
+    
+    #menuleft{
+        text-align: center;
+        padding-top: 5%;
+        width: 100%;
+    }
+    
+    li{
+        list-style: none;
+        font-size: 32px;
+        padding-top: 20px;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    #nav-right img{
+        width: 48px;
+    }
+    
+    #menuleft{
+        text-align: center;
+        padding-top: 25%;
+        width: 100%;
+    }
+    
+    li{
+        font-size: 10vw;
+        padding-top: 20px;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1223px) and (orientation : landscape) {
+    #nav-right img{
+        width: 48px;
+    }
+    
+    #menuleft{
+        text-align: center;
+        padding-top: 10%;
+        width: 100%;
+    }
+    
+    li{
+        font-size: 7vw;
+        padding-top: 20px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    #nav-right img{
+        width: 40px;
+    }
+    
+    #menuleft{
+        text-align: left;
+        padding-top: 5%;
+        margin-left: 10%;
+    }
+    
+    li{
+        font-size: 64px;
+        padding-top: 30px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    #nav-right img{
+        width: 40px;
+    }
+    
+    #menuleft{
+        text-align: left;
+        padding-top: 5%;
+        width: 50%;
+        margin-left: 10%;
+    }
+    
+    li{
+        list-style: none;
+        font-size: 80px;
+        padding-top: 35px;
+    }
+}
