@@ -4,6 +4,20 @@
     src: url(cera-130.otf);
 }
 
+body { 
+    animation: fadeInAnimation ease 0.3s;
+    animation-fill-mode: forward; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0.5; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
 html,body{
     margin: 0;
     padding: 0;
@@ -11,6 +25,11 @@ html,body{
     height: 100%;
     font-family: Cera;
     color: white;
+    scroll-behavior: smooth;
+}
+
+button{
+    cursor: pointer;
 }
 
 #bg{
@@ -120,8 +139,165 @@ img{
     color: black;
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+#projectspart{
+    height: 100%;
+    color: #003563;
+    text-align: center;
+}
+
+#title{
+    height: 20%;
+    width: 100%;
+    font-size: 32px;
+    display: table;
+}
+
+#lineleft-container{
+    display: table-cell;
+    width: 25%;
+}
+
+#lineleft{
+    width: 60%;
+    height: 50%;
+    float: right;
+    border-bottom: 6px solid black;
+}
+
+#title p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#lineright-container{
+    width: 25%;
+    display: table-cell;
+}
+
+#lineright{
+    width: 60%;
+    height: 50%;
+    float: left;
+    border-bottom: 6px solid black;
+}
+
+#projects{
+    height: 60%;
+}
+
+.project{
+    height: 35%;
+    background-image: url(../Design/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 16px;
+    width: 50%;
+    margin-left: 25%;
+    box-shadow: 2px 2px 8px grey;
+}
+
+.project-image{
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+}
+
+
+#webweiss img{
+    height: 80%;
+    width: 50%;
+    padding-top: 8%;
+}
+
+#benne img{
+    height: 100%;
+    width: 90%;
+}
+
+#lal img{
+    height: 100%;
+    width: 80%;
+}
+
+#project-naam{
+    color: white;
+}
+
+#viewMore{
+    height: 20%;
+}
+
+#viewMore button{
+    width: 50%;
+    height: 35%;
+    color: white;
+    border-radius: 16px;
+    background-image: url(../Design/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    margin-top: 15%;
+    font-size: 16px;
+    font-family: Cera;
+}
+
+#contact{
+    height: 100%;
+    color: #003563;
+    text-align: center;
+}
+
+#interested{
+    font-size: 24px;
+}
+
+form{
+    width: 80%;
+    margin-left: 10%;
+}
+
+input, textarea, select{
+    margin-top: 5%;
+    border: 1px solid #003563;
+    font-family: Cera;
+    height: 24px;
+    width: 45%;
+}
+
+#extra{
+    width: 90%;
+    font-family: Cera;
+    height: 80px;
+    resize: none;
+}
+
+select{
+    height: 28px;
+}
+
+input[type='submit']{
+    width: 50%;
+    height: 40px;
+    color: white;
+    border-radius: 16px;
+    background-image: url(../Design/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#online{
+    font-size: 24px;
+}
+
+/* Small smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) and (orientation:portrait){
     #iam{
         font-size: 24px;
         padding-top: 35vh;
@@ -181,7 +357,278 @@ img{
         font-size: 16px;
         color: black;
         line-height: 0.5em;
+    }
+    
+    #project-naam{
+        font-size: 12px;
+    }
+
+    
+    #viewMore button{
+        font-size: 12px;
+    }
+    
+    #interested{
+        font-size: 16px;
+    }
+    
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    input, textarea, select{
+        height: 16px;
+        width: 45%;
+    }
+    
+    select{
+        height: 20px;
+    }
+    
+    input[type='submit']{
+        width: 45%;
+        height: 30px;
+    }
+}
+
+/* Big smartphones (portrait) ----------- */
+@media only screen and (min-width : 320px) and (orientation:portrait){
+    #iam{
+        font-size: 32px;
+        padding-top: 35vh;
+    }
+    
+    #senne{
+        font-size: 88px;
+    }
+    
+    #functie{
+        font-size: 24px;
+    }
+    
+    #scroll img{
+        transform: rotate(90deg);
+        width: 32px;
+        margin-right: 8px;
+    }
+    
+    #scroll{
+        margin-top: 15vh;
+    }
+    
+    #skills-table-left{
+        width: 70%;
+        margin-left: 15%;
+        background-color: white;
+        border-right: 0.5px solid black;
+        border-radius: 16px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 40vh;
+        box-shadow: 8px 8px 6px;
+    }
+    
+    #skills-table-right{
+        width: 70%;
+        margin-left: 15%;
+        background-color: white;
+        border-radius: 16px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        height: 50vh;
+        box-shadow: 8px 8px 6px;
+    }
+    
+    #skills img{
+        width: 40px;
+        height: 40px;
+        margin-top: 32px;
+    }
+    
+    #smallTitle{
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    
+    #text{
+        font-size: 16px;
+        color: black;
+        line-height: 0.5em;
     } 
+    
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    input, textarea, select{
+        margin-top: 8%;
+        height: 32px;
+        font-size: 16px;
+        width: 45%;
+    }
+    
+    select{
+        height: 36px;
+    }
+    
+    #online{
+        font-size: 24px;
+        padding-top: 4vh;
+    }
+
+    #socials img{
+        width: 48px;
+        height: 48px;
+        margin-left: 16px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (orientation: landscape){
+    #iam{
+        font-size: 24px;
+        padding-top: 25vh;
+    }
+    
+    #senne{
+        font-size: 104px;
+    }
+    
+    #functie{
+        font-size: 16px;
+    }
+    
+    #scroll img{
+        transform: rotate(90deg);
+        width: 16px;
+        margin-right: 8px;
+    }
+    
+    #scroll{
+        margin-top: 8vh;
+    }
+    
+    #skills{
+        font-size: 16px;
+    }
+    
+    #skills-table-left{
+        width: 40%;
+        margin: 0;
+        margin-left: 10%;
+        margin-top: 10vh;
+        border-radius: 16px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 80vh;
+        float: left;
+    }
+    
+    #skills-table-right{
+        width: 40%;
+        margin: 0;
+        float: left;
+        margin-top: 10vh;
+        background-color: white;
+        border-radius: 16px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 80vh;
+    }
+    
+    #skills img{
+        width: 40px;
+        height: 40px;
+        margin-top: 16px;
+       
+    }
+    
+    #smallTitle{
+        font-size: 16px;
+        margin-top: 32px;
+        line-height: 0.3em;
+    }
+    
+    #text{
+        font-size: 16px;
+        color: black;
+        line-height: 0.8em;
+    }
+    
+    #title{
+        height: 15%;
+    }
+    
+    #lineleft-container{
+        width: 35%;
+    }
+    
+    #lineleft{
+        width: 40%;
+    }
+    
+    #lineright-container{
+        width: 35%;
+    }
+    
+    #lineright{
+        width: 40%;
+    }
+
+    .project{
+        height: 60%;
+        margin-top: 10%;
+    }
+    
+    #project1{
+        margin-left: 7.5%;
+        width: 25%;
+        float: left;
+    }
+
+    #project2{
+        margin-left: 5%;
+        width: 25%;
+        float: left;
+    }
+
+    #project3{
+        margin-left: 5%;
+        width: 25%;
+        float: left;
+    }
+    
+    .project-image{
+        height: 70%;
+    }
+    
+    #viewMore{
+        height: 20%;
+    }
+    
+    #viewMore button{
+        width: 25%;
+        height: 60%;
+        margin-top: 5%;
+        font-size: 16px;
+    }
+    
+   
+
+    input, textarea, select{
+        margin-top: 2%;
+    }
+    
+    #extra{
+        height: 64px;
+    }
+    
+    input[type='submit']{
+        width: 24%;
+        height: 40px;
+    }
 }
 
 /* iPads (portrait) ----------- */
@@ -223,20 +670,87 @@ img{
         width: 80px;
         height: 80px;
     }
+
     
     #smallTitle{
         font-size: 32px;
-        margin-top: 15px;
+        margin-top: 8px;
     }
     
     #text{
         font-size: 24px;
         color: black;
+        margin-top: -0.5vh;
     }
+
+    #title{
+        font-size: 80px;
+    }
+    
+    #lineleft-container{
+        width: 28%;
+    }
+    
+    #lineright-container{
+        width: 28%;
+    }
+    
+    .project{
+        width: 45%;
+        margin-left: 27.5%;
+    }
+    
+    #project-naam{
+        font-size: 24px;
+    }
+    
+    #viewMore button{
+        width: 45%;
+        font-size: 24px;
+    }
+
+    #interested{
+        font-size: 40px;
+    }
+    
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    input, textarea, select{
+        font-size: 24px;
+        height: 40px;
+    }
+    
+    #extra{
+        height: 128px;
+    }
+    
+    select{
+        height: 44px;
+    }
+    
+    input[type='submit']{
+        width: 30%;
+        height: 64px;
+        font-size: 32px;
+    }
+    
+    #online{
+        font-size: 40px;
+        padding-top: 0;
+    }
+
+    #socials img{
+        width: 56px;
+        height: 56px;
+    }
+
 }
 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1223px) and (orientation : landscape) {
     #iam{
         font-size: 32px;
         padding-top: 30vh;
@@ -266,9 +780,9 @@ img{
     }
     
     #skills-table-left{
-        width: 35%;
+        width: 30%;
         margin: 0;
-        margin-left: 15%;
+        margin-left: 20%;
         margin-top: 10vh;
         border-radius: 16px;
         border-top-right-radius: 0px;
@@ -278,7 +792,339 @@ img{
     }
     
     #skills-table-right{
+        width: 30%;
+        margin: 0;
+        float: left;
+        margin-top: 10vh;
+        background-color: white;
+        border-radius: 16px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 80vh;
+    }
+    
+    #skills img{
+        width: 128px;
+        height: 128px;
+        margin-top: 32px;
+    }
+    
+    #smallTitle{
+        font-size: 24px;
+        margin-top: 32px;
+        line-height: 1em;
+    }
+    
+    #text{
+        font-size: 24px;
+        line-height: 1em;
+    }
+
+    #title{
+        font-size: 64px;
+    }
+    
+    #lineleft-container{
+        width: 33%;
+    }
+    
+    #lineright-container{
+        width: 33%;
+    }
+    
+    .project{
+        height: 60%;
+    }
+    
+    #webweiss img{
+        width: 55%;
+    }
+    
+    #benne img{
+        width: 95%;
+    }
+    
+    #lal img{
+        width: 85%;
+    }
+    
+    #project-naam{
+        font-size: 24px;
+    }
+    
+    #viewMore{
+        height: 20%;
+    }
+    
+    #viewMore button{
+        width: 25%;
+        height: 48%;
+        font-size: 24px;
+    }
+    
+    #interested{
+        font-size: 40px;
+    }
+    
+    form{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    input, textarea, select{
+        font-size: 24px;
+        height: 40px;
+    }
+    
+    #extra{
+        height: 128px;
+    }
+    
+    select{
+        height: 44px;
+    }
+    
+    input[type='submit']{
+        width: 30%;
+        height: 64px;
+        font-size: 32px;
+    }
+    
+    #online{
+        font-size: 40px;
+        padding-top: 0;
+    }
+
+    #socials img{
+        padding-top: 0;
+        margin-top: -3vh;
+        width: 56px;
+        height: 56px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    #iam{
+        font-size: 40px;
+        padding-top: 25vh;
+    }
+    
+    #senne{
+        font-size: 280px;
+        margin-top: -8vh;
+    }
+    
+    #functie{
+        font-size: 32px;
+        margin-top: -0vh;
+    }
+    
+    #scroll img{
+        width: 40px;
+    }
+    
+    #scroll{
+        margin-top: 8vh;
+    }
+    
+    
+    #skills{
+        font-size: 40px;
+    }
+    
+    #skills-table-left{
+        width: 30%;
+        margin: 0;
+        margin-left: 20%;
+        margin-top: 5vh;
+        border-radius: 16px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 90vh;
+        float: left;
+    }
+    
+    #skills-table-right{
+        width: 30%;
+        margin: 0;
+        float: left;
+        margin-top: 5vh;
+        background-color: white;
+        border-radius: 16px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 90vh;
+    }
+    
+    #skills img{
+        width: 128px;
+        height: 128px;
+        margin-top: 32px;
+    }
+    
+    #smallTitle{
+        font-size: 32px;
+        margin-top: 48px;
+    }
+    
+    #text{
+        font-size: 32px;
+        line-height: 0.8em;
+    }
+
+    #title{
+        font-size: 64px;
+    }
+    
+    #lineleft-container{
+        width: 33%;
+    }
+
+    #lineleft{
+        width: 70%;
+    }
+    
+    #lineright-container{
+        width: 33%;
+    }
+    
+    #lineright{
+        width: 70%;
+    }
+    
+    #projects{
+        height: 60%;
+    }
+    
+    .project{
+        margin-top: 15vh;
+        height: 60%;
+    }
+
+    #webweiss img{
+        height: 90%;
+        width: 45%;
+        padding-top: 2%;
+    }
+    
+    #benne img{
+        height: 100%;
+        width: 95%;
+    }
+    
+    #lal img{
+        height: 100%;
+        width: 70%;
+    }
+
+    #project-naam{
+        font-size: 28px;
+    }
+    
+    #viewMore button{
+        height: 45%;
+        font-size: 24px;
+        margin-top: 2.5%;
+        width: 20%;
+    }
+
+    #interested{
+        font-size: 40px;
+    }
+
+    form{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    input, textarea, select{
+        font-size: 24px;
+        height: 48px;
         width: 35%;
+    }
+    
+    #extra{
+        height: 112px;
+        width: 70%;
+    }
+    
+    select{
+        height: 52px;
+    }
+    
+    input[type='submit']{
+        width: 20%;
+        height: 64px;
+        font-size: 32px;
+    }
+    
+    #online{
+        font-size: 40px;
+        padding-top: 0;
+    }
+
+    #socials img{
+        padding-top: 0;
+        margin-top: -3vh;
+        width: 56px;
+        height: 56px;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    #nav-left{
+        font-size: 40px;
+    }
+
+    img{
+        width: 48px;
+    }
+    
+    #iam{
+        font-size: 56px;
+    }
+    
+    #senne{
+        font-size: 352px;
+    }
+    
+    #functie{
+        font-size: 48px;
+    }
+    
+    #scroll img{
+        width: 48px;
+    }
+    
+    #scroll{
+        margin-top: 8vh;
+        font-size: 24px;
+    }
+    
+    #skills{
+        font-size: 48px;
+    }
+    
+    #skills-table-left{
+        width: 30%;
+        margin: 0;
+        margin-left: 20%;
+        margin-top: 10vh;
+        border-radius: 16px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 80vh;
+        float: left;
+    }
+    
+    #skills-table-right{
+        width: 30%;
         margin: 0;
         float: left;
         margin-top: 10vh;
@@ -292,27 +1138,75 @@ img{
     #skills img{
         width: 136px;
         height: 136px;
-        margin-top: 32px;
+        margin-top: 64px;
     }
     
     #smallTitle{
-        font-size: 24px;
+        font-size: 40px;
         margin-top: 48px;
         line-height: 0.3em;
     }
     
     #text{
-        font-size: 24px;
+        font-size: 40px;
         line-height: 0.8em;
     }
-}
 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-/* Styles */
-}
+    #projectspart{
+        height: 100%;
+        color: #003563;
+        text-align: center;
+    }
+    
+    #title{
+        height: 20%;
+        width: 100%;
+        font-size: 64px;
+        display: table;
+    }
+    
+    #lineleft-container{
+        display: table-cell;
+        width: 40%;
+    }
+    
+    #lineleft{
+        width: 70%;
+        height: 50%;
+        float: right;
+        border-bottom: 6px solid black;
+    }
+    
+    #title p{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    #lineright-container{
+        width: 40%;
+        display: table-cell;
+    }
+    
+    #lineright{
+        width: 70%;
+        height: 50%;
+        float: left;
+        border-bottom: 6px solid black;
+    }
 
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-/* Styles */
+    #projects{
+        margin-top: -10vh;
+    }
+
+    .project{
+        height: 60%;
+    }
+
+    #project-naam{
+        font-size: 40px;
+    }
+    
+    #viewMore button{
+        font-size: 40px;
+    }
 }
