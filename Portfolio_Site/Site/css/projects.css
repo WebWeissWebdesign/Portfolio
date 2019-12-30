@@ -1,0 +1,640 @@
+#title{
+    width: 80%;
+    margin-left: 10%;
+    text-decoration: underline;
+    height: 10%;
+}
+
+#nav-left{
+    font-size: 24px;
+}
+
+#geninfo{
+    font-size: 16px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#buttonleft{
+    margin-top: 5%;
+    text-align: center;
+    width: 80%;
+    margin-left: 8%;
+}
+
+button{
+    font-family: Cera;
+    background-color: white;
+    border: none;
+    color: #003563;
+    width: 50%;
+    height: 6vh;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 8px;
+}
+
+#image{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+img{
+    height: auto;
+    width: 90%;
+}
+
+#scroll{
+    margin-top: 6vh;
+}
+
+#scroll a{
+    text-decoration: none;
+}
+
+#skills{
+    color: white;
+    text-align: left;
+    padding-top: 8vh;
+}
+
+#about{
+    width: 80%;
+    margin-left: 10%;
+}
+
+#main{
+    font-size: 32px;
+}
+
+#line{
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+#info{
+    font-size: 20px;
+    text-align: left;
+    margin-left: -1%;
+}
+
+ul{
+    margin-left: -12%;
+}
+
+#technical{
+    width: 80%;
+    margin-left: 10%;
+}
+
+#small{
+    display: none;
+    font-size: 16px;
+}
+
+footer{
+    text-align: center;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+a{
+    text-decoration: underline;
+}
+
+/* Small smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) and (orientation:portrait){
+    #title{
+        font-size: 24px;
+    }
+    
+    #nav-left{
+        font-size: 16px;
+    }
+    
+    button{
+        width: 65%;
+    }
+    
+    #image{
+        width: 60%;
+        margin-left: 20%;;
+    }
+    
+    #scroll{
+        margin-top: 0vh;
+        font-size: 12px;
+    }
+
+    #scroll img{
+        width: 20px;
+        height: auto;
+    }
+
+    #main{
+        font-size: 24px;
+    }
+    
+    #line{
+        width: 0%;
+    }
+    
+    #info{
+        font-size: 16px;
+        margin-top: -5%;
+    }
+    
+    footer{
+        display: none;
+    }
+}
+
+/* Big smartphones (portrait) ----------- */
+@media only screen and (min-width : 320px) and (orientation:portrait){ 
+    ul{
+        margin-left: -5%;
+    }
+}
+
+/* Long Bois */
+@media only screen and (min-height : 700px) and (orientation:portrait){
+    #title{
+        font-size: 40px;
+    }
+    
+    #geninfo{
+        font-size: 24px;
+    }
+
+    #buttonleft{
+        width: 85%;
+    }
+    
+    button{
+        font-size: 16px;
+    }
+    
+    #image{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    #scroll{
+        margin-top: 8vh;
+    }
+
+    #about{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    #main{
+        font-size: 32px;
+    }
+    
+    #line{
+        width: 100%;
+        border-bottom: 2px solid white;
+    }
+    
+    #info{
+        font-size: 24px;
+        text-align: left;
+        margin-left: -1%;
+    }
+
+    #technical{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #technical #main{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #technical #line{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    ul{
+        width: 80%;
+        margin-left: 8%;
+    }
+    
+    #small{
+        display: none;
+        font-size: 16px;
+    }
+    
+    footer{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    h1{
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (orientation: landscape){
+
+    #title{
+        padding-top: 16vh;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #skills{
+        height: 150vh;
+    }
+
+    #geninfo{
+        font-size: 24px;
+    }
+    
+    #buttonleft{
+        width: 100%;
+        margin-top: 3vh;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    button{
+        height: 10vh;
+        width: 25%;
+    }
+    
+    #image{
+        display: none;
+    }
+    
+    #scroll{
+        margin-top: 8vh;
+        font-size: 20px;    
+    }
+
+    #scroll img{
+        width: 35px;
+        height: auto;
+    }
+    
+    #about{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    #main{
+        font-size: 32px;
+    }
+    
+    #line{
+        width: 90%;
+        border-bottom: 2px solid white;
+    }
+    
+    #info{
+        font-size: 20px;
+        text-align: left;
+        margin-left: 0%;
+    }
+    
+    ul{
+        margin-left: -3%;
+    }
+    
+    #technical{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    #title{
+        width: 100%;
+        margin-left: 0;
+        font-size: 64px;
+    }
+    
+    #geninfo{
+        font-size:32px;
+    }
+
+    button{
+        font-size: 24px;
+    }
+    
+    #image{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    
+    img{
+        height: auto;
+        width: 80%;
+    }
+    
+    #scroll{
+        margin-top: 6vh;
+    }
+    
+    #skills{
+        color: white;
+        text-align: left;
+        padding-top: 8vh;
+        height: 90%;
+    }
+    
+    #about{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    #main{
+        font-size: 48px;
+    }
+    
+    #line{
+        width: 100%;
+        border-bottom: 2px solid white;
+    }
+    
+    #info{
+        font-size: 32px;
+        text-align: left;
+        margin-left: 0%;
+    }
+    
+    ul{
+        margin-left: 8%;
+    }
+    
+    #technical{
+        width: 100%;
+        margin-left: -5%;
+
+    }
+    
+    #small{
+        margin-left: 10%;
+        display: block;
+        font-size: 32px;
+    }
+    
+    footer{
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    h1{
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1223px) and (orientation : landscape) {
+    #title{
+        width: 100%;
+        margin-left: 0;
+        font-size: 64px;
+        margin-top: auto;
+    }
+    
+    #geninfo{
+        font-size:32px;
+    }
+
+    #buttonleft{
+        margin-top: 2%;
+    }
+    
+    button{
+        width: 30%;
+        font-size: 24px;
+    }
+    
+    #image{
+        display: block;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+    
+    img{
+        height: auto;
+        width: 40%;
+    }
+    
+    #scroll{
+        margin-top: 2vh;
+    }
+    
+    #skills{
+        color: white;
+        text-align: left;
+        padding-top: 6vh;
+        height: 90%;
+    }
+    
+    #about{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    #main{
+        font-size: 40px;
+    }
+    
+    #info{
+        font-size: 24px;
+        text-align: left;
+    }
+    
+    ul{
+        margin-left: 0%;
+    }
+    
+    #technical{
+        width: 100%;
+    }
+    
+    #small{
+        display: block;
+        font-size: 24px;
+    }
+    
+    footer{
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        margin-left: -5%;
+    }
+    
+    h1{
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    #title{
+        width: 80%;
+        margin-left: 10%;
+        text-decoration: underline;
+        height: 10%;
+        font-size: 80px;
+    }
+    
+    #geninfo{
+        font-size: 32px;
+    }
+    
+    #buttonleft{
+        margin-top: 2%;
+        text-align: center;
+        width: 80%;
+        margin-left: 8%;
+    }
+    
+    button{
+        width: 25%;
+        font-size: 24px;
+    }
+    
+    #image{
+        display: block;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 2%;
+    }
+    
+    img{
+        height: auto;
+        width: 40%;
+    }
+    
+    #scroll{
+        display: none;
+    }
+    
+    #skills{
+        color: white;
+        text-align: left;
+        padding-top: 24vh;
+    }
+    
+    #about{
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    #main{
+        font-size: 48px;
+    }
+    
+    #line{
+        width: 95%;
+    }
+    
+    #info{
+        font-size: 32px;
+        text-align: left;
+    }
+    
+    ul{
+        margin-left: 0%;
+    }
+    
+    #technical{
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    #small{
+        display: block;
+        font-size: 32px;
+    }
+    
+    footer{
+        text-align: center;
+        margin-top: 12vh;
+        font-size: 32px;
+        border: 2px dotted white;
+    }
+    
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    a{
+        text-decoration: underline;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    
+    #geninfo{
+        font-size: 40px;
+    }
+
+    button{
+        width: 25%;
+        font-size: 32px;
+    }
+    
+    #main{
+        font-size: 72px;
+    }
+    
+    #info{
+        font-size: 40px;
+        text-align: left;
+    }
+
+    #skills{
+        height: 120%;
+    }
+    
+    ul{
+        margin-left: 0%;
+    }
+    
+    #technical{
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    #small{
+        display: block;
+        font-size: 40px;
+    }
+    
+    footer{
+        text-align: center;
+        margin-top: 10vh;
+        font-size: 32px;
+        border: 2px dotted white;
+    }
+    
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    a{
+        text-decoration: underline;
+    }
+}
