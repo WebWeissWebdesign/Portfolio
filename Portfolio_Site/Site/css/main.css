@@ -230,6 +230,7 @@ img{
 }
 
 #viewMore button{
+    display: none;
     width: 50%;
     height: 35%;
     color: white;

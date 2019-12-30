@@ -28,6 +28,10 @@
     display: none;
 }
 
+a{
+    text-decoration: underline;
+}
+
 /* Small smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) and (orientation:portrait){
     #title{
