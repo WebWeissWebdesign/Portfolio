@@ -279,6 +279,20 @@ select{
     height: 28px;
 }
 
+select,
+select option{
+    color: #000;
+}
+
+select:invalid,
+select option[value=""]{
+    color: #757575;
+}
+
+[hidden] {
+    display: none;
+  }
+
 input[type='submit']{
     width: 50%;
     height: 40px;

@@ -47,16 +47,27 @@
         <div id="interested">
             Wilt u met mij samenwerken?<br>Ik trakteer u op de eerste koffie!
         </div>
-        <form action="submit">
-            <input type="text" placeholder="Naam" id="naam">
-            <input type="email" placeholder="Email" id="email">
-            <select name="Type of project" id="typeOfProject">
-                <option value="" disabled selected></option>
-                <option value="0">Logo</option>
-                <option value="1">Website</option>
+        <form id="myForm" action="../../php/mailformNL.php" method="POST" onsubmit="return validateForm()">
+            <input type="text" placeholder="Naam" id="naam" required name="naam">
+            <input type="email" placeholder="Email" id="email" required name="email">
+            <label>
+            <select id="typeOfProject" required name="type[]">
+                <option value="" disabled selected hidden>Type project</option>
+                <option value="logo">Logo</option>
+                <option value="website">Website</option>
+                <option value="andere">Andere (Verklaar in extra details)</option>
             </select>
-            <input type="text" placeholder="Budget" id="budget">
-            <textarea name="Additional details" placeholder="Extra info" id="extra"></textarea><br>
+            </label>
+            <label>
+                <select id="budget" required name="budget[]">
+                    <option value="" disabled selected hidden>Budget</option>
+                    <option value="tbd">Prijs is bespreekbaar</option>
+                    <option value="400-700">400-700€</option>
+                    <option value="700-1000€">700-1000€</option>
+                    <option value=">1000">>1000€</option>
+                </select>
+            </label>
+            <textarea placeholder="Extra details" id="extra" name="extra"></textarea><br>
             <input type="submit" value="Indienen" id="submitButton">
         </form>
         <div id="online">
@@ -69,5 +80,6 @@
             <a href="https://twitter.com/WeissSenne" target="_blank"><img src="../../Design/twitter.png" id="twitter"></a>
         </div>
     </div>
+    <script src="../../js/validateFormNL.js"></script>
 </body>
 </html>
