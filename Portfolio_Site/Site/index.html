@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155145063-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155145063-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,13 +17,25 @@
     <title>Senne Weiss</title>
 </head>
 <body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="Design/close.svg"></a>
+        <div class="overlay-content">
+        <ul>
+            <a href="html/EN/indexEN.html onclick="closeNav()"><li>HOME</li></a>
+            <a href="html/EN/indexEN.html#projectspart" onclick="closeNav()"><li>PROJECTS</li></a>
+            <a href="html/EN/indexEN.html#skills" onclick="closeNav()"><li>SKILLS</li></a>
+            <a href="html/EN/aboutmeEN.html" onclick="closeNav()" target="_blank"><li>ABOUT ME</li></a>
+            <a href="html/EN/indexEN.html#contact" onclick="closeNav()"><li>CONTACT</li></a>
+        </ul>
+        </div>
+      </div>
     <div id="bg">
         <div id="nav">
             <div id="nav-left">
                 <a href="html/NL/indexNL.html">NL</a>/<a href="html/EN/indexEN.html">EN</a>
             </div>
             <div id="nav-right">
-                <a href="html/EN/menuEN.html"><img src="Design/menu.svg"></a>
+                <a onclick="openNav()"><img src="Design/menu.svg"></a>
             </div>
         </div>
         <div id="iam">
@@ -133,11 +154,12 @@
             <p>Find me online</p>
         </div>
         <div id="socials">
-            <a href="https://www.facebook.com/senne.weiss" target="_blank"><img src="../../Design/facebook.png" id="facebook"></a>
-            <a href="https://www.linkedin.com/in/senneweiss/" target="_blank"><img src="../../Design/linkedin.png" id="linkedin"></a>
-            <a href="https://github.com/WebWeissWebdesign" target="_blank"><img src="../../Design/github.png" id="github"></a>
-            <a href="https://twitter.com/WeissSenne" target="_blank"><img src="../../Design/twitter.png" id="twitter"></a>
+            <a href="https://www.facebook.com/senne.weiss" target="_blank"><img src="Design/facebook.png" id="facebook"></a>
+            <a href="https://www.linkedin.com/in/senneweiss/" target="_blank"><img src="Design/linkedin.png" id="linkedin"></a>
+            <a href="https://github.com/WebWeissWebdesign" target="_blank"><img src="Design/github.png" id="github"></a>
+            <a href="https://twitter.com/WeissSenne" target="_blank"><img src="Design/twitter.png" id="twitter"></a>
         </div>
     </div>
+    <script src="js/validateFormEN.js"></script>
 </body>
 </html>

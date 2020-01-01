@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155145063-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155145063-1');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,13 +18,25 @@
     <title>Senne Weiss</title>
 </head>
 <body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="../../Design/close.svg"></a>
+        <div class="overlay-content">
+        <ul>
+            <a href="indexNL.html" onclick="closeNav()"><li>STARTPAGINA</li></a>
+            <a href="indexNL.html#projectspart" onclick="closeNav()"><li>PROJECTEN</li></a>
+            <a href="indexNL.html#skills" onclick="closeNav()"><li>VAARDIGHEDEN</li></a>
+            <a href="aboutmeNL.html" onclick="closeNav()" target="_blank"><li>OVER MIJ</li></a>
+            <a href="indexNL.html#contact" onclick="closeNav()"><li>CONTACT</li></a>
+        </ul>
+        </div>
+      </div>
     <div id="bg">
         <div id="nav">
             <div id="nav-left">
                 <a href="indexNL.html">NL</a>/<a href="../EN/indexEN.html">EN</a>
             </div>
             <div id="nav-right">
-                <a href="menuNL.html"><img src="../../Design/menu.svg"></a>
+                <a onclick="openNav()"><img src="../../Design/menu.svg"></a>
             </div>
         </div>
         <div id="iam">

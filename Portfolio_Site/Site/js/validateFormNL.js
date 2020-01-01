@@ -14,3 +14,11 @@ function validateForm(){
         alert("Bedankt voor uw interesse, ik contacteer u zo rap mogelijk!");
     }
 }
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }

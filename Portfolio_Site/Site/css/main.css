@@ -4,20 +4,6 @@
     src: url(cera-130.otf);
 }
 
-body { 
-    animation: fadeInAnimation ease 0.3s;
-    animation-fill-mode: forward; 
-} 
-  
-@keyframes fadeInAnimation { 
-    0% { 
-        opacity: 0.5; 
-    } 
-    100% { 
-        opacity: 1; 
-     } 
-} 
-
 html,body{
     margin: 0;
     padding: 0;
@@ -30,6 +16,51 @@ html,body{
 
 button{
     cursor: pointer;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-image: url(../Design/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    text-align: left;
+    padding-top: 30%;
+    width: 100%;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 48px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: black;
+}
+
+.closebtn img{
+    float: right;
+    width: 30px;
+    margin-right: 32px;
+    margin-top: 24px;
+}
+
+li{
+    list-style: none;
 }
 
 #bg{
@@ -313,6 +344,31 @@ input[type='submit']{
 
 /* Small smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) and (orientation:portrait){
+      
+    .overlay-content {
+        text-align: left;
+        padding-top: 45%;
+        width: 100%;
+    }
+      
+    .overlay a {
+        font-size: 32px;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: black;
+    }
+    
+    .closebtn img{
+        float: right;
+        width: 30px;
+        margin-right: 32px;
+        margin-top: 24px;
+    }
+    
+    li{
+        list-style: none;
+    }
     #iam{
         font-size: 24px;
         padding-top: 35vh;
@@ -409,6 +465,7 @@ input[type='submit']{
 
 /* Big smartphones (portrait) ----------- */
 @media only screen and (min-width : 320px) and (orientation:portrait){
+    
     #iam{
         font-size: 32px;
         padding-top: 35vh;
@@ -502,6 +559,29 @@ input[type='submit']{
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) and (orientation: landscape){
+    .overlay-content {
+        text-align: center;
+        padding-top: 5%;
+    }
+      
+    .overlay a {
+        font-size: 32px;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: black;
+    }
+    
+    .closebtn img{
+        float: right;
+        width: 30px;
+        margin-right: 32px;
+        margin-top: 24px;
+    }
+    
+    li{
+        list-style: none;
+    }
     #iam{
         font-size: 24px;
         padding-top: 25vh;
@@ -648,6 +728,28 @@ input[type='submit']{
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+      
+    .overlay-content {
+        text-align: center;
+        padding-top: 25%;
+    }
+      
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 80px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .closebtn img{
+        width: 40px;
+    }
+    
+    li{
+        list-style: none;
+    }
     #nav-left{
         font-size: 40px;
     }
@@ -766,6 +868,30 @@ input[type='submit']{
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1223px) and (orientation : landscape) {
+      
+    .overlay-content {
+        text-align: center;
+        padding-top: 8%;
+    }
+      
+    .overlay a {
+        font-size: 80px;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: black;
+    }
+    
+    .closebtn img{
+        float: right;
+        width: 30px;
+        margin-right: 32px;
+        margin-top: 24px;
+    }
+    
+    li{
+        list-style: none;
+    }
     #iam{
         font-size: 32px;
         padding-top: 30vh;
@@ -920,6 +1046,31 @@ input[type='submit']{
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
+    .overlay-content {
+        text-align: left;
+        padding-top: 5%;
+        width: 100%;
+        margin-left: 10%;
+    }
+      
+    .overlay a {
+        font-size: 72px;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: black;
+    }
+    
+    .closebtn img{
+        float: right;
+        width: 40px;
+        margin-right: 32px;
+        margin-top: 24px;
+    }
+    
+    li{
+        list-style: none;
+    }
     #iam{
         font-size: 40px;
         padding-top: 25vh;
@@ -1093,6 +1244,61 @@ input[type='submit']{
 
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-image: url(../Design/Background.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+      
+    .overlay-content {
+        text-align: left;
+        padding-top: 8%;
+        width: 50%;
+        margin-left: 10%;
+        
+    }
+      
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 80px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+      
+    .overlay a:hover, .overlay a:focus {
+        color: black;
+    }
+
+    .closebtn img{
+        float: right;
+        width: 40px;
+        margin-right: 32px;
+        margin-top: 24px;
+    }
+    
+    #menuleft{
+        text-align: left;
+        padding-top: 5%;
+        width: 50%;
+        margin-left: 10%;
+    }
+    
+    li{
+        list-style: none;
+        font-size: 80px;
+    }
+
     #nav-left{
         font-size: 40px;
     }
